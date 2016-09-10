@@ -2,6 +2,9 @@
 
 echo "Inicia el Script Image Changer";
 
-#Seleccionando el archivo
+#Seleccionando el o los archivos a convertir 
 
-$(zenity --forms --title="Image Changer" --text="Is a easy image conversor format\n");
+echo "Seleccionando archivos";
+
+archivos=$(zenity --file-selection --title="Seleccionador de archivos" --multiple);
+
